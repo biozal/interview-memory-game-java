@@ -169,7 +169,27 @@ The data will be provided in a JSON document. The document will have the followi
 
 The sample data is provided in the same directory as the code.  It should be read into the program from the disk and serialized into POJO GameData and Guess, which are provided in the sample repository. 
 
-The GameRepositoryFileImp class should be used for reading in the data from the disk and returning the POJO only.  You are free to make as many other classes as required to break your code into logical units to run the simulator and test the data.  
+The file names are:
+ - sample-data1.json
+ - sample-data2.json
+ - sample-data3.json
+
+The GameRepositoryFileImp class should be used for reading in the data from the disk and returning the POJO **ONLY**.  You are free to make as many other classes and interfaces as required to break your code into logical units to be able to test and run the program.  
 
 ## Testing
 Unit and Integration tests should be provided in the test folder to test your code.
+
+
+## JSON Serialization
+
+
+It's recommended, but not required to use Google's GSON library for JSON Serialization.  The repo for this can be found at:
+
+[https://github.com/google/gson](https://github.com/google/gson)
+
+The repo readme file provides links to user guides, API documentation, and tutorials.
+
+
+Change Log
+==========
+Version 1.  Initial check-in of code, examples, and readme.
