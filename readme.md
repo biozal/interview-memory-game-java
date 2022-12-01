@@ -8,15 +8,14 @@ about this game on [Wikipedia](https://en.wikipedia.org/wiki/Concentration_(card
 In the game of concentration, the player is given a grid of cards all turned over, so they can’t see the value. The
 player flips over two cards at a time, looking to see if they are the same. They are removed from the playing area if
 they are the same card. If they do not match, both cards are turned back over, and they can pick two different cards.
-The goal is to remove all the cards from the playing area. The game’s goal is to find all the matching cards in the
+The goal is to remove all the cards from the playing area. Our game’s goal is to find all the matching cards in the
 fewest tries.
 
-The simulation you will build will work on these principles of the game but will use a grid with numbers assigned
-instead of cards.
+The simulation you will be building will work on these principles of the game but will use a grid with numbers instead of cards.
 
 ## Requirements
 
-The program will have no interaction with the user; instead will use predefined data to check if, given the data
+The program will have no interaction with the user; instead will use predefined data to check if, given the game data
 provided, the game has the correct score. The program will have the following requirements:
 
 - The program must be written in Java
