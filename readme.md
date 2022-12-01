@@ -42,45 +42,34 @@ The letters need to go up in value until all the numbers in the grid have an ass
 in the alphabet, you add the same letter and move up the alphabet again { ZZ, YY, XX … AA, ZZZ, YYY, XXX … AAA … }
 
 Grid Example:
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
+
+|     |     |     |
+|---|---|---|
+| 1   | 2   | 3   |
+| 4   | 5   | 6   |
+| 7   | 8   | 9   |
+| 10  | 11  | 12  |
 
 Answer Assignment Example:
-W
-Y
-U
-Z
-U
-V
-V
-W
-X
-X
-Y
-Z
+
+|     |     |     |
+|-----|-----|-----|
+| W   | Y   | U   |
+| Z   | U   | V   |
+| V   | W   | X   |
+| X   | Y   | Z   |
 
 In our example, the letters are assigned to the following numbers:
 
-U = 3, 5
-V = 6, 7
-W = 1, 8
-X = 9, 10
-Y = 2, 11
-Z = 4, 12
+- U = 3, 5
+- V = 6, 7
+- W = 1, 8
+- X = 9, 10
+- Y = 2, 11
+- Z = 4, 12
 
 The player would be able to make two guesses at a time revealing which letters are behind the numbers. If the letters
-differ, the total score will go up by 7 points. If the letters match, they are removed from the game, and -1 points
-reduce the score. When all letters have been matched, the game is over. The goal is to get the lowest score possible.
+differ, the total score will go up by 7 points. If the letters match, they are removed from the game, and the score is reduced by -1 points. When all letters have been matched, the game is over. The goal is to get the lowest score possible.
 
 The data will be provided in a JSON document. The document will have the following structure, although the data will be different (along with the board size):
 
