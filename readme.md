@@ -32,6 +32,7 @@ provided, the game has the correct score. The program will have the following re
         - If the game data is incorrect the program will print out a message stating "The game data is incorrect."
     - If some data is missing, the program will print out a message stating "Error in game data"
     - If the program fails for any other reason, it should print out a message "The program has run into an error"
+- The program should **NOT** print anything else to the screen. 
 
 ## Provided Game Data
 
@@ -173,6 +174,9 @@ The file names are:
  - sample-data1.json
  - sample-data2.json
  - sample-data3.json
+- sample-data4.json
+
+Your program should not hard code the file name and instead take it as an argument to run the program.  Other files **WILL** be used during code review.
 
 The GameRepositoryFileImp class should be used for reading in the data from the disk and returning the POJO **ONLY**.  You are free to make as many other classes and interfaces as required to break your code into logical units to be able to test and run the program.  
 
