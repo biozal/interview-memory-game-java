@@ -21,7 +21,7 @@ provided, the game has the correct score. The program will have the following re
 - The program must be written in Java
 - The program must use JDK 11.0 or higher
 - The program must be checked into a GitHub repository
-- The program must use Java programming best practices
+- The program must use Java programming [best practices](https://www.oracle.com/java/technologies/javase/codeconventions-introduction.html)
 - The program must take in the game data to run the simulation in JSON format from disk.  
 - The program must calculate if the game score is correct based on the game data provided.
     - The program should first calculate if the board data is correct and there are matching pairs of letters provided.
