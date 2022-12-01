@@ -19,24 +19,24 @@ instead of cards.
 The program will have no interaction with the user; instead will use predefined data to check if, given the data
 provided, the game has the correct score. The program will have the following requirements:
 
-- It must be written in Java
-- It must use JDK 11.0 or higher
-- It must be checked into a GitHub repository
-- It must use Java programming best practices
-- It must take in the game data to run the simulation in JSON format from Couchbase Capella
-- It must calculate if the game score is correct based on the game data provided.
+- The program must be written in Java
+- The program must use JDK 11.0 or higher
+- The program must be checked into a GitHub repository
+- The program must use Java programming best practices
+- The program must take in the game data to run the simulation in JSON format from disk.  
+- The program must calculate if the game score is correct based on the game data provided.
     - The program should first calculate if the board data is correct and there are matching pairs of letters provided.
-      If the board data is incorrect, the program will print out a message stating "The board data is incorrect"
+      - If the board data is incorrect, the program will print out a message stating "The board data is incorrect"
     - Next the program should calculate if the total score is correct based on the guesses data provided.
         - If the game data is correct, the program will print out a message stating "The game data is correct".
         - If the game data is incorrect the program will print out a message stating "The game data is incorrect."
-    - If some data is missing, the program will print out a message stating "Error in game data"
+    - If some guess data is missing, the program will print out a message stating "Error in game data"
     - If the program fails for any other reason, it should print out a message "The program has run into an error"
 - The program should **NOT** print anything else to the screen. 
 
 ## Provided Game Data
 
-Our game will allow a grid of numbers of unlimited size, but it must be an even number (need pairs). These numbers will
+Our game will allow a grid of numbers and should be limited to the amount provided by the board game data, but it must be an even number (need pairs). These numbers will
 represent the back of the playing cards. A letter starting with Z must be assigned to two random numbers in the grid.
 The letters need to go up in value until all the numbers in the grid have an assigned letter. If you run out of letters
 in the alphabet, you add the same letter and move up the alphabet again { ZZ, YY, XX … AA, ZZZ, YYY, XXX … AAA … }
@@ -157,7 +157,7 @@ The data will be provided in a JSON document. The document will have the followi
 }
 ```
 
-The sample data is provided in the same directory as the code.  It should be read into the program from the disk and serialized into POJO GameData and Guess, which are provided in the sample repository. 
+The sample data is provided in the same directory as the code.  It should be read into the program from the disk and serialized into POJO classes you create called GameData and Guess.  
 
 The file names are:
  - sample-data1.json
@@ -165,9 +165,9 @@ The file names are:
  - sample-data3.json
 - sample-data4.json
 
-Your program should not hard code the file name and instead take it as an argument to run the program.  Other files **WILL** be used during code review.
+Your program should not hard code the file name to read the data from and instead take it as an argument to run the program.  Other files not provided in this repo **WILL** be used during code review.
 
-The GameRepositoryFileImp class should be used for reading in the data from the disk and returning the POJO **ONLY**.  You are free to make as many other classes and interfaces as required to break your code into logical units to be able to test and run the program.  
+A GameRepositoryFileImp class should be created and used for reading in the data from the disk and returning the POJOs **ONLY**.  You are free to make as many other classes and interfaces as required to break your code into logical units to be able to test and run the program.  
 
 ## Testing
 Unit and Integration tests should be provided in the test folder to test your code.
@@ -175,13 +175,12 @@ Unit and Integration tests should be provided in the test folder to test your co
 
 ## JSON Serialization
 
-
-It's recommended, but not required to use Google's GSON library for JSON Serialization.  The repo for this can be found at:
+It's recommended, but not required to use Google's GSON library for JSON Serialization from JSON string data to POJOs.  The repo for this can be found at:
 
 [https://github.com/google/gson](https://github.com/google/gson)
 
 The repo readme file provides links to user guides, API documentation, and tutorials.
-
+f
 
 Change Log
 ==========
